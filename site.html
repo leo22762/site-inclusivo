@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha Inclusiva - Receitas Acessíveis para Todos</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+…            letter-spacing: var(--letter-spacing);
+            word-spacing: var(--word-spacing);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Foco ultra visível para Acessibilidade <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha Inclusiva - Receitas Acessíveis para Todos</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Inter e Dyslexic Friendly Alternative -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --brand-primary: #d97706;
+            --brand-hover: #b45309;
+            --accent-green: #16a34a;
+            --border-color: #e2e8f0;
+            --font-main: 'Inter', sans-serif;
+            --letter-spacing: normal;
+            --word-spacing: normal;
+            --focus-ring: 4px solid #2563eb;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            letter-spacing: var(--letter-spacing);
+            word-spacing: var(--word-spacing);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Foco ultra visível para Acessibilidade Motor/Teclado */
+        *:focus-visible {
+            outline: var(--focus-ring) !important;
+            outline-offset: 3px !important;
+        }
+
+        /* --- MODO DISLEXIA --- */
+        body.font-dyslexic {
+            --font-main: 'Atkinson Hyperlegible', sans-serif;
+            --letter-spacing: 0.08em;
+            --word-spacing: 0.15em;
+            line-height: 1.8 !important;
+        }
+
+        /* --- MODO SENSORIAL CALMO (AUTISTAS NÍVEL 1, 2, 3) --- */
+        body.sensory-friendly {
+            --bg-primary: #f4f5f0 !important;<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha Inclusiva - Receitas Acessíveis para Todos</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+…            letter-spacing: var(--letter-spacing);
+            word-spacing: var(--word-spacing);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Foco ultra visível para Acessibilidade 
+            --bg-card: #eef1e6 !important;
+            --text-primary: #2d3732 !important;
+            --text-secondary: #4a5550 !important;
+            --brand-primary: #52796f !important;
+            --brand-hover: #354f52 !important;
+            --accent-green: #52796f !important;
+            --border-color: #cbd5e1 !important;
+        }
+        body.sensory-friendly * {
+            animation: none !important;
+            transition: none !important;
+            box-shadow: none !important;
+        }
+        body.sensory-friendly img {
+            filter: sepia(10%) contrast(90%);
+        }
+
+        /* --- MODOS DE DALTONISMO --- */
+        /* Protanopia (Ajuste para Vermelho) */
+        body.cb-protanopia {
+            --brand-primary: #0072b2;
+            --brand-hover: #005689;
+            --accent-green: #e69f00;
+            --text-primary: #111827;
+        }
+        /* Deuteranopia (Ajuste para Verde) */
+        body.cb-deuteranopia {
+            --brand-primary: #0072b2;
+            --brand-hover: #005282;
+            --accent-green: #cc79a7;
+            --text-primary: #0f172a;
+        }
+        /* Tritanopia (Ajuste para Azul) */
+        body.cb-tritanopia {
+            --brand-primary: #d55e00;
+            --brand-hover: #a34600;
+            --accent-green: #009e73;
+            --text-primary: #111827;
+        }
+        /* Monocromático / Alto Contraste */
+        body.cb-monochrome {
+            --bg-primary: #000000 !important;
+            --bg-card: #18181b !important;
+            --text-primary: #ffff00 !important; /* Amarelo de alta legibilidade */
+            --text-secondary: #ffffff !important;
+            --brand-primary: #ffff00 !important;
+            --brand-hover: #e6e600 !important;
+            --accent-green: #ffff00 !important;
+            --border-color: #ffffff !important;
+            --focus-ring: 4px solid #ffffff !important;
+        }
+        body.cb-monochrome img {
+            filter: grayscale(100%) contrast(150%);
+        }
+
+        /* Estilização Customizada das Cores Aplicadas */
+        .custom-bg-primary { background-color: var(--bg-primary); }
+        .custom-bg-card { background-color: var(--bg-card); }
+        .custom-text-primary { color: var(--text-primary); }
+        .custom-text-secondary { color: var(--text-secondary); }
+        .custom-btn-brand { 
+            background-color: var(--brand-primary); 
+            color: #ffffff; 
+        }
+        body.cb-monochrome .custom-btn-brand {
+            color: #000000 !important;
+            font-weight: 800;
+        }
+        .custom-btn-brand:hover { background-color: var(--brand-hover); }
+        .custom-border { border-color: var(--border-color); }
+
+        /* Estilo para ícones/emojis de Pictogramas */
+        .pictogram-icon {
+            font-size: 1.6rem;
+            display: inline-block;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        /* Títulos Pictográficos Grandes para Analfabetos */
+        .pictographic-mode .pictogram-large {
+            font-size: 2.2rem !important;
+        }
+        .pictographic-mode .ingredient-item {
+            font-size: 1.25rem !important;
+            padding: 0.8rem !important;
+            border-width: 2px !important;
+        }
+
+        /* Indicador de leitura em áudio ativa */
+        .speaking-active {
+            animation: pulse-border 1.5s infinite;
+            border: 3px solid #ef4444 !important;
+        }
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="sticky top-0 z-50 bg-slate-900 text-white shadow-xl" role="banner">
+        <!-- Top Toolbar de Acessibilidade Rápida -->
+        <div class="bg-slate-950 px-4 py-2 text-xs border-b border-slate-800">
+            <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+                <div class="flex items-center gap-2" role="region" aria-label="Avisos de Acessibilidade">
+                    <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded text-[10px] uppercase">Acessível</span>
+                    <span class="hidden sm:inline text-slate-300">Site 100% Adaptado para Neurodiversidade, Visão e Leitura</span>
+                </div>
+                <!-- Atalho de Leitura da Página Toda -->
+                <button onclick="readEntirePage()" class="flex items-center gap-1.5 bg-amber-600 hover:bg-amber-500 text-white px-3 py-1 rounded-full font-bold transition focus:ring-2 focus:ring-amber-300" aria-label="Ouvir explicação da página em voz alta">
+                    <i class="fa-solid => fa-volume-high text-sm"></i>
+                    <span>🔊 OUVIR PÁGINA</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Painel Principal do Navbar -->
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            <!-- Logo e Título -->
+            <a href="#" class="flex items-center gap-3 group focus:outline-none" aria-label="Ir para página inicial do Cozinha Inclusiva">
+                <div class="w-12 h-12 bg-amber-500 rounded-2xl flex items-center justify-center text-slate-950 text-2xl font-black shadow-lg group-hover:scale-105 transition">
+                    🍳
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black tracking-tight flex items-center gap-2">
+                        Cozinha Inclusiva
+                    </h1>
+                    <p class="text-xs text-amber-400 font-medium">Receitas para Todos os Sentidos e Mentes</p>
+                </div>
+            </a>
+
+            <!-- Botão do Menu de Acessibilidade Completo (Mobile & Desktop) -->
+            <button id="toggle-acc-panel" onclick="toggleAccPanel()" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 px-4 py-2 rounded-xl font-bold transition shadow-md" aria-expanded="false" aria-controls="accessibility-drawer">
+                <i class="fa-solid fa-universal-access text-xl"></i>
+                <span>PAINEL DE ACESSIBILIDADE</span>
+                <i class="fa-solid fa-chevron-down text-xs transition-transform" id="acc-chevron"></i>
+            </button>
+        </div>
+
+        <div id="accessibility-drawer" class="hidden bg-slate-800 border-t border-slate-700 p-4 md:p-6 shadow-2xl transition-all" role="region" aria-label="Opções Avançadas de Acessibilidade">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- 1. Visão de Cores / Daltonismo -->
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                    <label for="color-vision-select" class="block font-bold text-amber-400 text-sm mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-eye"></i> 1. Daltonismo / Visão:
+                    </label>
+                    <select id="color-vision-select" onchange="changeColorVision(this.value)" class="w-full bg-slate-950 text-white p-2.5 rounded-lg border border-slate-700 font-medium focus:border-amber-400">
+                        <option value="standard">👁️ Visão Padrão (Cores Reais)</option>
+                        <option value="protanopia">🔴 Protanopia (Sem Vermelho)</option>
+                        <option value="deuteranopia">🟢 Deuteranopia (Sem Verde)</option>
+                        <option value="tritanopia">🔵 Tritanopia (Sem Azul)</option>
+                        <option value="monochrome">⚫ Monocromático / Alto Contraste</option>
+                    </select>
+                </div>
+
+                <!-- 2. Neurodiversidade / Autismo -->
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                    <span class="block font-bold text-amber-400 text-sm mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-brain"></i> 2. Autismo / Calma Sensorial:
+                    </span>
+                    <button id="btn-sensory" onclick="toggleSensoryMode()" class="w-full bg-slate-950 hover:bg-slate-700 text-white p-2.5 rounded-lg border border-slate-700 font-semibold flex items-center justify-between text-xs">
+                        <span>🌿 Modo Sensorial Calmo</span>
+                        <span id="sensory-status" class="bg-slate-800 text-slate-400 px-2 py-0.5 rounded text-[10px]">DESLIGADO</span>
+                    </button>
+                    <p class="text-[11px] text-slate-400 mt-1.5">Remove animações, suaviza luzes e paleta de cores.</p>
+                </div>
+
+                <!-- 3. Analfabetismo / Pictogramas -->
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                    <span class="block font-bold text-amber-400 text-sm mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-icons"></i> 3. Leitura Fácil / Emojis:
+                    </span>
+                    <button id="btn-pictogram" onclick="togglePictograms()" class="w-full bg-slate-950 hover:bg-slate-700 text-white p-2.5 rounded-lg border border-slate-700 font-semibold flex items-center justify-between text-xs">
+                        <span>🎨 Modo Visual Ampliado</span>
+                        <span id="picto-status" class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded text-[10px]">LIGADO</span>
+                    </button>
+                    <p class="text-[11px] text-slate-400 mt-1.5">Aumenta emojis e pictogramas de ações e ingredientes.</p>
+                </div>
+
+                <!-- 4. Tipografia & Dislexia -->
+                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+                    <span class="block font-bold text-amber-400 text-sm mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-text-height"></i> 4. Tamanho e Fonte:
+                    </span>
+                    <div class="flex items-center gap-2 mb-2">
+                        <button onclick="adjustFontSize(-1)" class="flex-1 bg-slate-950 hover:bg-slate-700 p-2 rounded-lg border border-slate-700 font-bold text-lg" aria-label="Diminuir texto">A-</button>
+                        <button onclick="adjustFontSize(0)" class="flex-1 bg-slate-950 hover:bg-slate-700 p-2 rounded-lg border border-slate-700 text-xs font-bold" aria-label="Tamanho normal">Reset</button>
+                        <button onclick="adjustFontSize(1)" class="flex-1 bg-slate-950 hover:bg-slate-700 p-2 rounded-lg border border-slate-700 font-bold text-lg" aria-label="Aumentar texto">A+</button>
+                    </div>
+                    <button id="btn-dyslexic" onclick="toggleDyslexicFont()" class="w-full bg-slate-950 hover:bg-slate-700 text-white p-2 rounded-lg border border-slate-700 font-semibold text-xs py-1.5">
+                        📖 Fonte para Dislexia (Alta Legibilidade)
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-8" id="main-content" role="main">
+        
+        <!-- Banner de Boas-Vindas Inclusivo -->
+        <section class="custom-bg-card rounded-3xl p-6 md:p-8 mb-8 border custom-border shadow-sm">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-sm font-bold">
+                        <span class="text-xl">🤝</span> Cozinhar é para Todos
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-extrabold tracking-tight custom-text-primary">
+                        Escolha uma Receita Deliciosa e Acessível
+                    </h2>
+                    <p class="custom-text-secondary text-base md:text-lg">
+                        Todas as receitas possuem ingredientes ilustrados com emojis, instruções lidas em voz alta, temporizador e passos bem estruturados.
+                    </p>
+                </div>
+                <!-- Sintetizador de Áudio para Apresentação -->
+                <button onclick="speakText('Bem-vindo ao Cozinha Inclusiva! Escolha uma receita abaixo para começar a cozinhar com áudio e símbolos visuais.')" class="custom-btn-brand px-6 py-4 rounded-2xl font-bold flex items-center gap-3 text-lg shadow-lg hover:scale-105 transition flex-shrink-0" aria-label="Ouvir instrução inicial">
+                    <span class="text-2xl">🔊</span>
+                    <span>Ouvir Instrução Inicial</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Filtros e Busca de Receitas -->
+        <section class="mb-8" aria-label="Filtro de Receitas">
+            <div class="flex flex-col md:flex-row gap-4 justify-between items-center bg-slate-200/50 p-3 rounded-2xl">
+                <!-- Filtros por Categoria -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto" role="tablist" aria-label="Categorias de receitas">
+                    <button onclick="filterCategory('todos')" class="cat-btn active custom-btn-brand px-4 py-2 rounded-xl text-sm font-bold shadow-sm" role="tab" aria-selected="true">🍽️ Todas</button>
+                    <button onclick="filterCategory('doces')" class="cat-btn bg-white hover:bg-amber-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-bold border custom-border" role="tab">🍰 Doces</button>
+                    <button onclick="filterCategory('salgados')" class="cat-btn bg-white hover:bg-amber-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-bold border custom-border" role="tab">🍳 Salgados</button>
+                    <button onclick="filterCategory('rapidas')" class="cat-btn bg-white hover:bg-amber-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-bold border custom-border" role="tab">⚡ Rápido (Até 15 min)</button>
+                </div>
+
+                <!-- Campo de Busca -->
+                <div class="relative w-full md:w-72">
+                    <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="search-input" onkeyup="searchRecipes()" placeholder="Buscar ingrediente ou receita..." class="w-full pl-10 pr-4 py-2 rounded-xl border custom-border custom-bg-card custom-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" aria-label="Buscar receitas por nome ou ingredientes">
+                </div>
+            </div>
+        </section>
+
+        <!-- Grade de Cartões de Receita -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8" id="recipes-grid">
+            <!-- As receitas serão injetadas via JavaScript para suporte a dados dinâmicos -->
+        </section>
+
+        <div id="recipe-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="custom-bg-card border-2 custom-border w-full max-w-4xl rounded-3xl p-6 md:p-8 max-h-[90vh] overflow-y-auto shadow-2xl relative my-8">
+                
+                <!-- Botão de Fechar Modal -->
+                <button onclick="closeRecipeModal()" class="absolute top-4 right-4 bg-slate-200 hover:bg-slate-300 text-slate-800 w-12 h-12 rounded-full font-bold text-xl flex items-center justify-center transition" aria-label="Fechar janela da receita">
+                    ✕
+                </button>
+
+                <div id="modal-content">
+                    <!-- Conteúdo detalhado inserido via JS -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-300 py-8 border-t border-slate-800 mt-12" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+            <div class="flex justify-center items-center gap-2 text-xl font-bold text-amber-400">
+                <span>🍳 Cozinha Inclusiva</span>
+            </div>
+            <p class="text-sm text-slate-400 max-w-2xl mx-auto">
+                Desenvolvido sob os diretrizes de acessibilidade universal W3C/WCAG 2.1 AAA. Projeto focado na neurodiversidade, autonomia alimentar para autistas, daltônicos, pessoas com dislexia e baixo letramento.
+            </p>
+            <div class="text-xs text-slate-500 pt-4 border-t border-slate-900">
+                © 2026 Cozinha Inclusiva — Tecnologia Assistiva de Acesso Gratuito.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* ==========================================================================
+           BASE DE DADOS DE RECEITAS COM PICTOGRAMAS, EMOJIS E PASSOS ESTRUTURADOS
+           ========================================================================== */
+        const recipes = [
+            {
+                id: 'bolo-chocolate',
+                title: 'Bolo de Chocolate Fácil',
+                category: 'doces',
+                prepTime: '30 min',
+                timeMinutes: 30,
+                servings: '8 fatias',
+                difficulty: 'Fácil 🟢',
+                emoji: '🍫🎂',
+                description: 'Um bolo fofinho e rápido de fazer usando apenas uma tigela!',
+                ingredients: [
+                    { name: 'Ovos', qty: '2 unidades', emoji: '🥚' },
+                    { name: 'Leite', qty: '1 Xícara', emoji: '🥛' },
+                    { name: 'Manteiga ou Óleo', qty: '2 Colheres', emoji: '🧈' },
+                    { name: 'Farinha de Trigo', qty: '2 Xícaras', emoji: '🌾' },
+                    { name: 'Cacau em Pó', qty: '1 Xícara', emoji: '🍫' },
+                    { name: 'Açúcar', qty: '1 Xícara', emoji: '🍬' },
+                    { name: 'Fermento em Pó', qty: '1 Colher de sopa', emoji: '🥄' }
+                ],
+                steps: [
+                    {
+                        number: 1,
+                        actionEmoji: '🥣',
+                        actionTitle: 'Misturar os Líquidos',
+                        text: 'Em uma tigela, coloque os 2 ovos 🥚, 1 xícara de leite 🥛 e 2 colheres de manteiga 🧈. Misture bem com uma colher.',
+                        timer: 0
+                    },
+                    {
+                        number: 2,
+                        actionEmoji: '🌾',
+                        actionTitle: 'Adicionar Secos',
+                        text: 'Coloque a farinha 🌾, o cacau 🍫 e o açúcar 🍬. Mexa devagar até ficar uma massa bem lisa e sem bolinhas.',
+                        timer: 0
+                    },
+                    {
+                        number: 3,
+                        actionEmoji: '🥄',
+                        actionTitle: 'Colocar Fermento',
+                        text: 'Adicione 1 colher de fermento 🥄 e misture suavemente só um pouquinho.',
+                        timer: 0
+                    },
+                    {
+                        number: 4,
+                        actionEmoji: '♨️',
+                        actionTitle: 'Assar no Forno',
+                        text: 'Despeje a massa em uma fôrma untada. Peça ajuda para colocar no forno quente por 30 minutos.',
+                        timer: 1800 // 30 minutos em segundos
+                    }
+                ]
+            },
+            {
+                id: 'panqueca-americana',
+                title: 'Panqueca Americana Fofinha',
+                category: 'rapidas',
+                prepTime: '15 min',
+                timeMinutes: 15,
+                servings: '4 panquecas',
+                difficulty: 'Muito Fácil 🟢',
+                emoji: '🥞🍯',
+                description: 'Panquecas macias ideais para o café da manhã ou lanche.',
+                ingredients: [
+                    { name: 'Ovo', qty: '1 unidade', emoji: '🥚' },
+                    { name: 'Leite', qty: '1 Xícara pequena', emoji: '🥛' },
+                    { name: 'Farinha de Trigo', qty: '1 Xícara', emoji: '🌾' },
+                    { name: 'Açúcar', qty: '2 Colheres', emoji: '🍬' },
+                    { name: 'Manteiga', qty: '1 Colher derretida', emoji: '🧈' },
+                    { name: 'Fermento', qty: '1 Colher de chá', emoji: '🥄' }
+                ],
+                steps: [
+                    {
+                        number: 1,
+                        actionEmoji: '🥣',
+                        actionTitle: 'Bater os Ingredientes',
+                        text: 'Junte o ovo 🥚, o leite 🥛, a farinha 🌾, o açúcar 🍬 e a manteiga 🧈 numa tigela. Bata até virar um creme.',
+                        timer: 0
+                    },
+                    {
+                        number: 2,
+                        actionEmoji: '🍳',
+                        actionTitle: 'Dourar na Frigideira',
+                        text: 'Coloque uma concha de massa na frigideira quente 🍳. Espere 2 minutos até fazer bolinhas e vire do outro lado.',
+                        timer: 120 // 2 minutos
+                    },
+                    {
+                        number: 3,
+                        actionEmoji: '🍯',
+                        actionTitle: 'Servir',
+                        text: 'Coloque no prato e sirva com mel 🍯 ou frutas de sua preferência!',
+                        timer: 0
+                    }
+                ]
+            },
+            {
+                id: 'vitamina-banana',
+                title: 'Vitamina de Banana e Morango',
+                category: 'rapidas',
+                prepTime: '5 min',
+                timeMinutes: 5,
+                servings: '2 copos',
+                difficulty: 'Muito Fácil 🟢',
+                emoji: '🍌🍓🥛',
+                description: 'Bebida super nutritiva, rápida e cheia de energia.',
+                ingredients: [
+                    { name: 'Bananas', qty: '2 unidades maduras', emoji: '🍌' },
+                    { name: 'Morangos', qty: '5 unidades', emoji: '🍓' },
+                    { name: 'Leite Gelado', qty: '2 Copos grandes', emoji: '🥛' },
+                    { name: 'Mel ou Açúcar', qty: '1 Colher (opcional)', emoji: '🍯' }
+                ],
+                steps: [
+                    {
+                        number: 1,
+                        actionEmoji: '🔪',
+                        actionTitle: 'Descascar e Fatiar',
+                        text: 'Descasque as 2 bananas 🍌 e retire as folhas dos morangos 🍓.',
+                        timer: 0
+                    },
+                    {
+                        number: 2,
+                        actionEmoji: '⚙️',
+                        actionTitle: 'Bater no Liquidificador',
+                        text: 'Coloque as frutas e os 2 copos de leite 🥛 no liquidificador. Bata por 1 minuto até ficar bem cremoso.',
+                        timer: 60 // 1 minuto
+                    },
+                    {
+                        number: 3,
+                        actionEmoji: '🥤',
+                        actionTitle: 'Servir Gelado',
+                        text: 'Despeje em copos bonitos 🥤 e beba imediatamente!',
+                        timer: 0
+                    }
+                ]
+            },
+            {
+                id: 'omelete-rapido',
+                title: 'Omelete Rápido e Saudável',
+                category: 'salgados',
+                prepTime: '10 min',
+                timeMinutes: 10,
+                servings: '1 porção',
+                difficulty: 'Fácil 🟢',
+                emoji: '🍳🧀',
+                description: 'Opção salgada rica em proteínas para qualquer hora do dia.',
+                ingredients: [
+                    { name: 'Ovos', qty: '2 unidades', emoji: '🥚' },
+                    { name: 'Queijo Ralado', qty: '2 Colheres', emoji: '🧀' },
+                    { name: 'Pitada de Sal', qty: '1 Pitada pequena', emoji: '🧂' },
+                    { name: 'Manteiga', qty: '1 Colher pequena', emoji: '🧈' },
+                    { name: 'Tomate Picado', qty: 'Metade de 1 tomate', emoji: '🍅' }
+                ],
+                steps: [
+                    {
+                        number: 1,
+                        actionEmoji: '🥣',
+                        actionTitle: 'Bater Ovos',
+                        text: 'Quebre os 2 ovos 🥚 num prato fundo. Adicione a pitada de sal 🧂 e bata com um garfo.',
+                        timer: 0
+                    },
+                    {
+                        number: 2,
+                        actionEmoji: '🍳',
+                        actionTitle: 'Cozinhar',
+                        text: 'Derreta a manteiga 🧈 na frigideira e despeje os ovos batidos. Adicione o queijo 🧀 e o tomate 🍅 por cima.',
+                        timer: 0
+                    },
+                    {
+                        number: 3,
+                        actionEmoji: '⏱️',
+                        actionTitle: 'Dobrar e Finalizar',
+                        text: 'Espere cozinhar por 3 minutos ⏱️, dobre a omelete ao meio com uma espátula e sirva quente!',
+                        timer: 180 // 3 minutos
+                    }
+                ]
+            }
+        ];
+
+        /* ==========================================================================
+           SÍNTESE DE VOZ (TEXT-TO-SPEECH API NATIVA)
+           ========================================================================== */
+        let synth = window.speechSynthesis;
+        let isSpeaking = false;
+
+        function speakText(text) {
+            if (!synth) {
+                alert('A leitura em voz alta não é suportada neste navegador.');
+                return;
+            }
+
+            // Cancela leituras anteriores
+            synth.cancel();
+
+            if (text === '') return;
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR';
+            utterance.rate = 0.9; // Velocidade um pouco mais pausada e amigável
+
+            utterance.onend = () => {
+                document.querySelectorAll('.speaking-active').forEach(el => el.classList.remove('speaking-active'));
+            };
+
+            synth.speak(utterance);
+        }
+
+        function readEntirePage() {
+            const pageText = "Você está no site Cozinha Inclusiva. Temos receitas de Bolo de Chocolate, Panqueca Americana, Vitamina de Banana e Omelete Rápido. Clique no botão de qualquer receita para ouvir os ingredientes e os passos.";
+            speakText(pageText);
+        }
+
+        /* ==========================================================================
+           CONTROLES DE ACESSIBILIDADE E NAVEGAÇÃO
+           ========================================================================== */
+        
+        // Alternar Gaveta de Acessibilidade
+        function toggleAccPanel() {
+            const drawer = document.getElementById('accessibility-drawer');
+            const btn = document.getElementById('toggle-acc-panel');
+            const chevron = document.getElementById('acc-chevron');
+            
+            const isHidden = drawer.classList.contains('hidden');
+            if (isHidden) {
+                drawer.classList.remove('hidden');
+                btn.setAttribute('aria-expanded', 'true');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                drawer.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // 1. Mudar Perfil de Visão de Cor / Daltonismo
+        function changeColorVision(visionType) {
+            document.body.classList.remove('cb-protanopia', 'cb-deuteranopia', 'cb-tritanopia', 'cb-monochrome');
+            if (visionType !== 'standard') {
+                document.body.classList.add(`cb-${visionType}`);
+            }
+            speakText(`Modo de visão alterado para ${visionType}`);
+        }
+
+        // 2. Modo Sensorial Calmo (Autismo)
+        let sensoryActive = false;
+        function toggleSensoryMode() {
+            sensoryActive = !sensoryActive;
+            const btnStatus = document.getElementById('sensory-status');
+            
+            if (sensoryActive) {
+                document.body.classList.add('sensory-friendly');
+                btnStatus.textContent = 'LIGADO';
+                btnStatus.className = 'bg-emerald-500 text-white font-bold px-2 py-0.5 rounded text-[10px]';
+                speakText('Modo sensorial calmo ativado. Animações e luzes foram reduzidas.');
+            } else {
+                document.body.classList.remove('sensory-friendly');
+                btnStatus.textContent = 'DESLIGADO';
+                btnStatus.className = 'bg-slate-800 text-slate-400 px-2 py-0.5 rounded text-[10px]';
+                speakText('Modo sensorial desativado.');
+            }
+        }
+
+        // 3. Modo Pictográfico Ampliado
+        let pictogramsActive = true;
+        function togglePictograms() {
+            pictogramsActive = !pictogramsActive;
+            const btnStatus = document.getElementById('picto-status');
+            
+            if (pictogramsActive) {
+                document.body.classList.add('pictographic-mode');
+                btnStatus.textContent = 'LIGADO';
+                btnStatus.className = 'bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded text-[10px]';
+            } else {
+                document.body.classList.remove('pictographic-mode');
+                btnStatus.textContent = 'DESLIGADO';
+                btnStatus.className = 'bg-slate-800 text-slate-400 px-2 py-0.5 rounded text-[10px]';
+            }
+            renderRecipes(recipes);
+        }
+
+        // 4. Fonte para Dislexia
+        let dyslexicActive = false;
+        function toggleDyslexicFont() {
+            dyslexicActive = !dyslexicActive;
+            if (dyslexicActive) {
+                document.body.classList.add('font-dyslexic');
+                speakText('Fonte adaptada para dislexia ativada.');
+            } else {
+                document.body.classList.remove('font-dyslexic');
+            }
+        }
+
+        // Controle de Tamanho de Fonte
+        let currentFontSizeLevel = 0;
+        function adjustFontSize(delta) {
+            if (delta === 0) {
+                currentFontSizeLevel = 0;
+                document.documentElement.style.fontSize = '16px';
+            } else {
+                currentFontSizeLevel += delta;
+                if (currentFontSizeLevel > 4) currentFontSizeLevel = 4;
+                if (currentFontSizeLevel < -2) currentFontSizeLevel = -2;
+                const newSize = 16 + (currentFontSizeLevel * 2);
+                document.documentElement.style.fontSize = `${newSize}px`;
+            }
+        }
+
+        /* ==========================================================================
+           RENDERIZAÇÃO DAS RECEITAS NO CATALOGO
+           ========================================================================== */
+        function renderRecipes(recipesToRender) {
+            const grid = document.getElementById('recipes-grid');
+            grid.innerHTML = '';
+
+            if (recipesToRender.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 custom-bg-card rounded-3xl border custom-border">
+                        <p class="text-3xl mb-2">🔍</p>
+                        <p class="text-xl font-bold custom-text-primary">Nenhuma receita encontrada</p>
+                        <p class="custom-text-secondary text-sm mt-1">Tente buscar por outro termo ou selecione "Todas".</p>
+                    </div>
+                `;
+                return;
+            }
+
+            recipesToRender.forEach(recipe => {
+                const card = document.createElement('article');
+                card.className = 'custom-bg-card rounded-3xl border-2 custom-border p-6 flex flex-col justify-between shadow-md hover:shadow-xl transition-all';
+                
+                card.innerHTML = `
+                    <div>
+                        <!-- Header do Card -->
+                        <div class="flex items-start justify-between gap-4 mb-4">
+                            <span class="text-5xl pictogram-large" role="img" aria-label="${recipe.title}">${recipe.emoji}</span>
+                            <button onclick="speakText('${recipe.title}. ${recipe.description}')" class="bg-amber-100 hover:bg-amber-200 text-amber-900 p-2.5 rounded-2xl flex items-center gap-2 font-bold text-xs" aria-label="Ouvir resumo da receita ${recipe.title}">
+                                <i class="fa-solid fa-volume-high text-sm"></i>
+                                <span>OUVIR</span>
+                            </button>
+                        </div>
+
+                        <!-- Título e Descrição -->
+                        <h3 class="text-2xl font-black custom-text-primary mb-2">${recipe.title}</h3>
+                        <p class="custom-text-secondary text-sm mb-4 line-clamp-2">${recipe.description}</p>
+
+                        <!-- Indicadores Visuais Rápidos -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-slate-100 custom-text-primary text-xs font-bold px-3 py-1.5 rounded-xl border custom-border flex items-center gap-1.5">
+                                ⏱️ ${recipe.prepTime}
+                            </span>
+                            <span class="bg-slate-100 custom-text-primary text-xs font-bold px-3 py-1.5 rounded-xl border custom-border flex items-center gap-1.5">
+                                🍽️ ${recipe.servings}
+                            </span>
+                            <span class="bg-slate-100 custom-text-primary text-xs font-bold px-3 py-1.5 rounded-xl border custom-border">
+                                ${recipe.difficulty}
+                            </span>
+                        </div>
+
+                        <!-- Prévia de Ingredientes em Emojis -->
+                        <div class="mb-6 bg-slate-50 p-3 rounded-2xl border custom-border">
+                            <span class="text-xs font-bold custom-text-secondary block mb-2">INGREDIENTES PRINCIPAIS:</span>
+                            <div class="flex flex-wrap gap-2 text-xl">
+                                ${recipe.ingredients.map(ing => `<span title="${ing.name}" class="bg-white px-2 py-1 rounded-lg border border-slate-200 shadow-sm">${ing.emoji}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão Ação Principal -->
+                    <button onclick="openRecipeModal('${recipe.id}')" class="w-full custom-btn-brand py-3.5 px-4 rounded-2xl font-black text-base flex items-center justify-center gap-3 shadow-md hover:scale-[1.02] transition" aria-label="Ver modo de preparo completo de ${recipe.title}">
+                        <span>VER MODO DE PREPARO</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        /* ==========================================================================
+           MODAL DE RECEITA COMPLETA COM TIMER E PASSOS INTERATIVOS
+           ========================================================================== */
+        function openRecipeModal(recipeId) {
+            const recipe = recipes.find(r => r.id === recipeId);
+            if (!recipe) return;
+
+            const modal = document.getElementById('recipe-modal');
+            const content = document.getElementById('modal-content');
+
+            content.innerHTML = `
+                <!-- Cabeçalho da Receita no Modal -->
+                <div class="border-b custom-border pb-6 mb-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <span class="text-6xl">${recipe.emoji}</span>
+                        <div>
+                            <h2 id="modal-title" class="text-3xl font-black custom-text-primary">${recipe.title}</h2>
+                            <p class="custom-text-secondary text-sm mt-1">${recipe.description}</p>
+                        </div>
+                    </div>
+
+                    <!-- Leitura em Voz Alta da Receita Toda -->
+                    <button onclick="readFullRecipe('${recipe.id}')" class="mt-4 bg-amber-500 hover:bg-amber-600 text-slate-950 px-5 py-2.5 rounded-xl font-black flex items-center gap-2 text-sm shadow-sm" aria-label="Ouvir receita inteira do início ao fim">
+                        <i class="fa-solid fa-volume-high text-lg"></i>
+                        <span>🔊 OUVIR RECEITA COMPLETA DO INÍCIO AO FIM</span>
+                    </button>
+                </div>
+
+                <!-- Seção 1: Ingredientes Ilustrados -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold custom-text-primary mb-4 flex items-center gap-2">
+                        <span>🧺</span> Ingredientes Necessários:
+                    </h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3" aria-label="Lista de ingredientes">
+                        ${recipe.ingredients.map((ing, idx) => `
+                            <li class="ingredient-item flex items-center gap-3 bg-slate-50 p-3 rounded-2xl border custom-border">
+                                <span class="text-3xl bg-white p-2 rounded-xl shadow-sm border border-slate-200">${ing.emoji}</span>
+                                <div>
+                                    <span class="font-black custom-text-primary block text-base">${ing.qty}</span>
+                                    <span class="custom-text-secondary text-sm">${ing.name}</span>
+                                </div>
+                                <button onclick="speakText('${ing.qty} de ${ing.name}')" class="ml-auto text-slate-400 hover:text-amber-600 p-2" aria-label="Ouvir ingrediente ${ing.name}">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+
+                <!-- Seção 2: Passos Numerados Previsíveis -->
+                <div>
+                    <h3 class="text-xl font-bold custom-text-primary mb-4 flex items-center gap-2">
+                        <span>👩‍🍳</span> Passo a Passo do Preparo:
+                    </h3>
+                    <div class="space-y-4">
+                        ${recipe.steps.map((step) => `
+                            <div class="bg-slate-50 p-4 rounded-2xl border-2 custom-border flex flex-col md:flex-row gap-4 justify-between items-start md:items-center">
+                                <div class="flex items-start gap-3">
+                                    <span class="bg-amber-500 text-slate-950 font-black rounded-xl w-8 h-8 flex items-center justify-center text-base flex-shrink-0 mt-0.5">
+                                        ${step.number}
+                                    </span>
+                                    <span class="text-3xl flex-shrink-0">${step.actionEmoji}</span>
+                                    <div>
+                                        <h4 class="font-extrabold custom-text-primary text-base mb-1">${step.actionTitle}</h4>
+                                        <p class="custom-text-secondary text-sm leading-relaxed">${step.text}</p>
+                                    </div>
+                                </div>
+
+                                <!-- Ações do Passo: Áudio e Timer -->
+                                <div class="flex items-center gap-2 w-full md:w-auto justify-end flex-shrink-0">
+                                    <button onclick="speakText('${step.text}')" class="bg-slate-200 hover:bg-slate-300 text-slate-800 p-3 rounded-xl font-bold text-xs flex items-center gap-1.5" aria-label="Ouvir instruções do passo ${step.number}">
+                                        <i class="fa-solid fa-volume-high text-sm"></i>
+                                        <span>Ouvir</span>
+                                    </button>
+
+                                    ${step.timer > 0 ? `
+                                        <button id="timer-btn-${recipe.id}-${step.number}" onclick="startTimer(${step.timer}, 'timer-btn-${recipe.id}-${step.number}')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 px-3 py-3 rounded-xl font-bold text-xs flex items-center gap-1.5 shadow-sm">
+                                            <i class="fa-solid fa-stopwatch text-sm"></i>
+                                            <span>⏱️ Iniciar Timer (${Math.floor(step.timer/60)} min)</span>
+                                        </button>
+                                    ` : ''}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Impede rolagem de fundo
+        }
+
+        function closeRecipeModal() {
+            const modal = document.getElementById('recipe-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            if (synth) synth.cancel(); // Para áudio ao fechar
+        }
+
+        // Leitura Sequencial da Receita Completa
+        function readFullRecipe(recipeId) {
+            const recipe = recipes.find(r => r.id === recipeId);
+            if (!recipe) return;
+
+            let textToRead = `Receita de ${recipe.title}. Ingredientes: `;
+            recipe.ingredients.forEach(ing => {
+                textToRead += `${ing.qty} de ${ing.name}. `;
+            });
+
+            textToRead += 'Modo de preparo: ';
+            recipe.steps.forEach(step => {
+                textToRead += `Passo ${step.number}: ${step.text}. `;
+            });
+
+            speakText(textToRead);
+        }
+
+        /* ==========================================================================
+           SISTEMA DE TEMPORIZADOR COM AVISO SONORO SINTETIZADO
+           ========================================================================== */
+        function startTimer(durationSeconds, buttonId) {
+            const btn = document.getElementById(buttonId);
+            if (!btn) return;
+
+            let remaining = durationSeconds;
+            btn.disabled = true;
+            btn.className = 'bg-slate-800 text-amber-400 px-3 py-3 rounded-xl font-bold text-xs flex items-center gap-1.5';
+
+            speakText(`Temporizador iniciado para ${Math.floor(durationSeconds/60)} minutos.`);
+
+            const interval = setInterval(() => {
+                const mins = Math.floor(remaining / 60);
+                const secs = remaining % 60;
+                btn.innerHTML = `⏱️ ${mins}:${secs < 10 ? '0' : ''}${secs}`;
+
+                if (remaining <= 0) {
+                    clearInterval(interval);
+                    btn.disabled = false;
+                    btn.className = 'bg-emerald-600 text-white px-3 py-3 rounded-xl font-bold text-xs flex items-center gap-1.5';
+                    btn.innerHTML = '✅ Tempo Concluído!';
+                    
+                    // Alerta Sonoro e Falado Suave
+                    speakText('Atenção! O tempo de cozimento terminou!');
+                }
+                remaining--;
+            }, 1000);
+        }
+
+        /* ==========================================================================
+           BUSCA E FILTROS DE CATEGORIA
+           ========================================================================== */
+        function filterCategory(category) {
+            // Atualiza botões
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.className = 'cat-btn bg-white hover:bg-amber-100 text-slate-800 px-4 py-2 rounded-xl text-sm font-bold border custom-border';
+                btn.setAttribute('aria-selected', 'false');
+            });
+            event.currentTarget.className = 'cat-btn active custom-btn-brand px-4 py-2 rounded-xl text-sm font-bold shadow-sm';
+            event.currentTarget.setAttribute('aria-selected', 'true');
+
+            if (category === 'todos') {
+                renderRecipes(recipes);
+            } else {
+                const filtered = recipes.filter(r => r.category === category);
+                renderRecipes(filtered);
+            }
+        }
+
+        function searchRecipes() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = recipes.filter(recipe => {
+                const matchTitle = recipe.title.toLowerCase().includes(query);
+                const matchDesc = recipe.description.toLowerCase().includes(query);
+                const matchIng = recipe.ingredients.some(i => i.name.toLowerCase().includes(query));
+                return matchTitle || matchDesc || matchIng;
+            });
+            renderRecipes(filtered);
+        }
+
+        // Fechar Modal pressionando a tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeRecipeModal();
+            }
+        });
+
+        window.onload = () => {
+            renderRecipes(recipes);
+            document.body.classList.add('pictographic-mode');
+        };
+    </script>
+</body>
+</html>
